@@ -1,4 +1,7 @@
 package Excecoes;
 
-public class ExcecaoDominio {
+public class ExcecaoDominio extends Exception {
+    public ExcecaoDominio(String mensagem) {
+        super(mensagem);
+    }
 }

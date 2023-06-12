@@ -16,5 +16,6 @@ public class Main {
         System.out.print("Data de saída (dd/MM/yyyy): ");
         String dataSaidaStr = scanner.next();
         LocalDate dataSaida = LocalDate.parse(dataSaidaStr, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+
     }
 }
