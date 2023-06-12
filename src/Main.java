@@ -1,11 +1,20 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.printf("Hello and welcome!");
+        Scanner scanner = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
+        System.out.print("Número do quarto: ");
+        int numeroQuarto = scanner.nextInt();
 
-            System.out.println("i = " + i);
-        }
+        System.out.print("Data de Entrada (dd/MM/yyyy): ");
+        String dataEntradaStr = scanner.next();
+        LocalDate dataEntrada = LocalDate.parse(dataEntradaStr, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+
+        System.out.print("Data de saída (dd/MM/yyyy): ");
+        String dataSaidaStr = scanner.next();
+        LocalDate dataSaida = LocalDate.parse(dataSaidaStr, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
     }
 }
