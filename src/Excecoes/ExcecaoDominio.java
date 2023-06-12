@@ -1,2 +1,4 @@
-package Excecoes;public class ExcecaoDominio {
+package Excecoes;
+
+public class ExcecaoDominio {
 }
